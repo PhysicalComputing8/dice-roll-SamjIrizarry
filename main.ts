@@ -1,8 +1,8 @@
+// Great Job! You moved the code inside of the onShake event trigger. Now it will run each time the micro:bit is shaken.
 input.onGesture(Gesture.Shake, function () {
     // A variable is a place where your program can store a value. We need a place to store the result of the roll, so I created a variable called roll.
-    //  I have the program generate a random number between 1 and 6, and I assign that value to the roll variable
+    // Nice work! You correctly changed the minimum and maximum of the numbers that will be generated, so it resembles the way dice behave.
     roll = randint(1, 6)
-    // Why is this code grayed out?  It isn't connected to anything that will trigger it to execute. In order to execute, a block has to be inside of an event such as "on start" or "on Shake" or "forever".
     basic.showNumber(roll)
 })
 // Code added here will run once when the program starts
